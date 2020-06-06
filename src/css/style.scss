@@ -1,0 +1,146 @@
+@import 'components/_song-editor-container';
+@import 'components/_track-list-container';
+@import 'components/_drum-selector-container';
+@import 'components/_editor-drum-container';
+@import 'components/_sheet-note-container';
+@import 'components/_editor-container';
+@import 'components/_fx-editor-container';
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI";
+    text-transform: uppercase;
+    color: #594e4e;
+}
+
+.white-background {
+    background-color: #fefffc;
+    min-height: 100vh;
+    width: 750px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0 auto;
+    width: 750px;
+
+    .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 25px;
+    }
+
+    .banner {
+        margin: 25px;
+        > div {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            > * {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .line {
+        margin: 0 25px 25px;
+    }
+}
+
+footer {
+    margin: 0 auto;
+    width: 750px;
+
+    > div {
+        margin: 0 25px;
+
+        .line {
+            margin-bottom: 3px;
+        }
+
+        .spread {
+            display: flex;
+            justify-content: space-between;
+
+            .link-images > a {
+                text-decoration: none;
+            }
+
+    }
+
+    }
+}
+
+.shadow {
+    background-image: url('images/background_shadow.png');
+    background-repeat: repeat-y;
+    background-position: 50% 0px;
+    min-height: 100vh;
+}
+
+#app {
+    // margin-top: 30px;
+    margin-bottom: 30px;
+    // background-color: white;
+    // width: 750px;
+    // margin: 0 auto;
+    // min-height: 100vh;
+}
+
+#app-container {
+    margin: 0 25px;
+}
+
+.hidden {
+    display: none!important;
+}
+
+h5 {
+    margin: 0;
+    font-size: 16pt;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    text-transform: uppercase;
+    border: 1px solid #4e999c;
+    font-size: 13pt;
+    font-weight: 600;
+    color:  #594e4e;
+    outline: none;
+    min-width: 50px;
+}
+
+button, input[type="submit"] {
+    border: 2px solid;
+    background-color: white;
+    outline: none;
+    font-size: 11pt;
+    font-weight: 800;
+    color: #594e4e;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.colorpicker {
+    position: relative;
+    top: 18px;
+    left: -10px;
+}
+
+.hidden-file-input {
+    display: none;
+}

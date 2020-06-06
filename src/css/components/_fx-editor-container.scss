@@ -1,0 +1,68 @@
+#fx-editor-container {
+    margin-bottom: 10px;
+
+    .fx-editor-channel {
+
+        .channel-selector {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+
+            label {
+                flex: 0 0 15%;
+            }
+        }
+
+        .fx-lists {
+            display: flex;
+
+            .fx-container {
+                flex: 1;
+                margin-left: 1px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                .fx-title {
+                    font-weight: 800;
+                }
+
+                .fx-bordered-div {
+                    border: 1px solid #00969c;
+                    height: 200px;
+                    overflow: auto;
+                    padding: 4px;
+
+                    .input-group {
+                        display: flex;
+                        align-items: center;
+
+                        input {
+                            flex: 0 0 20%;
+                            min-width: 20px;
+                        }
+                    }
+
+                    .fx-item {
+                        font-size: 10pt;
+                        font-weight: 600;
+                        display: flex;
+
+                        .fx-item-name {
+                            flex: 1;
+                        }
+
+                        .fx-item-buttons {
+                            flex: 0 0 30px;
+                            display: flex;
+                            justify-content: space-around;
+                            right: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
